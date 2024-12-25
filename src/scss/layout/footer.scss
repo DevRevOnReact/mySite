@@ -1,0 +1,110 @@
+.footer{
+	background: rgb(0, 0, 0);
+	.footer__background{
+		padding-right: 64px;
+		color: white;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: baseline;
+		
+		@media (min-width: 768px) {
+			padding-right: 64px;
+			color: white;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: baseline;
+		}
+		.footer__socials_list{
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			gap: 20px;
+			flex-wrap: wrap;
+			.footer__socials_icon svg{
+				stroke: red;
+				fill: red;
+			  }
+
+			 
+		}
+		@media (max-width: 768px) {
+			.footer__socials_list {
+			  display: grid;
+			  grid-template-columns: repeat(8, 2fr);
+			  gap: 10px;
+			  padding-bottom: 24px;
+			}
+		  }
+		.footer__container{
+			padding-top: 48px;
+			padding-bottom: 48px;
+			display: flex;
+			flex-direction: column;
+			gap: 48px;
+			@media (min-width: 767px) {
+				padding-top: 64px;
+			padding-bottom: 104px;
+			display: flex;
+			flex-direction: column;
+			gap: 41px;
+			  }
+			.footer__contacts{
+				display: flex;
+				flex-direction: column;
+				gap: 24px;
+				@media (min-width: 768px) {
+					display: flex;
+					flex-direction: row;
+				}
+				.footer__contacts_email{
+					text-decoration: underline;
+					color: rgb(255, 255, 255);
+					font-size: 24px;
+					font-weight: 700;
+				}
+				.footer__contacts_number{
+					color: rgb(255, 255, 255);
+					font-size: 24px;
+					font-weight: 400;
+				}
+			}
+		}
+	}
+}
+
+.develop{
+	padding-bottom:48px ;
+	@media (min-width: 768px) {
+		position: absolute;
+		margin-left: 64px;
+		margin-top: 124px;
+	}
+
+	.develop__text{
+		color: rgb(255, 255, 255);
+		font-size: 12px;
+		font-weight: 400;
+	}
+
+}
+
+.footer__socials_list{
+	list-style: none;
+}
+
+
+.social-icon:hover svg.icon{
+	fill: rgb(255, 221, 0);
+}
+
+.social-icon svg.icon{
+	fill: white;
+}
+
+@media only screen and (max-width: 768px) {
+    .footer__socials_list img:nth-child(8) {
+        visibility: hidden;
+    }
+}

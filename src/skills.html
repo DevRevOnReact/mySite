@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/head.html',{"title": "Главная"})
+	
+	<body>
+		<div class="wrapper">
+			<!-- Шапка сайта -->
+			@@include('html/header.html',{})
+			
+			<!-- Основной контент -->
+			<div class="block">
+				<img src="../img/banner123.jpg" alt="" class="cube">
+				<div class="skills__container">
+				<div class="skills">
+				<h1 class="skill__head">Навыки</h1>
+				<div class="skill">
+					<div class="skill__container">
+						<div class="progress__container" id="progress1" data-progress="60">
+							<div class="progress__bar"></div>
+							<span class="progress__text">JavaScript</span>
+						</div>
+						<p class="skill__text">
+							Могу создавать интерактивные веб-приложения, обрабатывать события,
+							манипулировать DOM и работать с асинхронными запросами.
+							Также знаком с основными концепциями функционального
+							и объектно-ориентированного программирования в JavaScript.
+							</p>
+					</div>
+				</div>
+				<div class="skill">
+					<div class="skill__container">
+						<div class="progress__container" id="progress1" data-progress="80">
+							<div class="progress__bar"></div>
+							<span class="progress__text">html</span>
+						</div>
+						<p class="skill__text">
+							Я уверенно создаю разметку для веб-страниц,
+							используя основные теги и атрибуты.
+							Могу правильно структурировать контент, 
+							включая текст, изображения, ссылки и формы.
+							Также знаком с семантической разметкой и основными принципами доступности в HTML
+						</p>
+					</div>
+				</div>
+				<div class="skill">
+					<div class="skill__container">
+						<div class="progress__container" id="progress1" data-progress="40">
+							<div class="progress__bar"></div>
+							<span class="progress__text">git</span>
+						</div>
+						<p class="skill__text">
+							Я умею создавать репозитории, клонировать проекты, добавлять, коммитить и пушить изменения.
+							Знаком с базовыми командами, такими как git add, git commit, git push, git pull, git clone.
+							Осознаю основные концепции ветвления и слияния, а также могу создавать и переключаться между ветками.
+						</p>
+					</div>
+				</div>				
+				<div class="skill">
+					<div class="skill__container">
+						<div class="progress__container" id="progress1" data-progress="60">
+							<div class="progress__bar"></div>
+							<span class="progress__text">gulp</span>
+						</div>
+						<p class="skill__text">
+							 Я умею создавать и настраивать задачи для автоматизации сборки проектов,
+							 такие как компиляция препроцессоров CSS (например, Sass), минификация и конкатенация файлов,
+							  оптимизация изображений, запуск тестов и другие действия.
+							 Также знаком с использованием плагинов Gulp и умею интегрировать их в рабочий процесс.
+							</p>
+					</div>
+				</div>					
+				<div class="skill">
+					<div class="skill__container">
+						<div class="progress__container" id="progress1" data-progress="50">
+							<div class="progress__bar"></div>
+							<span class="progress__text">TypeScript</span>
+						</div>
+						<p class="skill__text">
+							Я могу создавать базовые приложения на TypeScript, определять типы данных для переменных,
+							параметров функций и возвращаемых значений, 
+							а также использовать интерфейсы для описания структуры объектов.
+							Однако мой опыт ограничен использованием базовых функций и концепций,
+							и мне нужно продолжать изучение для более глубокого понимания продвинутых возможностей TypeScript,
+							таких как дженерики, декораторы и продвинутая работа с типами.
+						</p>
+					</div>
+				</div>
+				<div class="skill">
+					<div class="skill__container">
+						<div class="progress__container" id="progress1" data-progress="60">
+							<div class="progress__bar"></div>
+							<span class="progress__text">redux</span>
+						</div>
+						<p class="skill__text">
+							Я понимаю основные концепции управления состоянием в Redux,
+							такие как хранилище (store), действия (actions), редюсеры (reducers)
+							 и подключение компонентов к хранилищу через connect.
+							Я могу создавать базовые приложения с использованием Redux, 
+							реализовывать базовые операции чтения и записи в хранилище, 
+							а также следить за изменениями состояния приложения. Однако мой опыт ограничен более сложными аспектами,
+							такими как использование middleware, нормализация состояния и оптимизация производительности.
+						</p>
+					</div>
+				</div>	
+				</div>
+				  	<button class="show" id="showFull">Показать полностью</button>
+					</div>
+				</div>
+			</div>
+			<!-- Подвал сайта -->
+			@@include('html/footer.html',{})
+		</div>	
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		
+		<script>
+			$(document).ready(function(){
+					var maxVisibleBars = 6;
+		var fullVisibilityClicked = false;
+
+	var additionalBarsLoaded = false;
+
+	$(document).ready(function(){
+    function isScrolledIntoView(elem) {
+        var docViewTop = $(window).scrollTop();
+        var docViewBottom = docViewTop + $(window).height();
+        var elemTop = $(elem).offset().top;
+        var elemBottom = elemTop + $(elem).height();
+        return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+    }
+
+    function animateSkillsOnScroll() {
+        $(".skill").each(function() {
+            if (isScrolledIntoView(this)) {
+                $(this).addClass("visible");
+            }
+        });
+    }
+
+    $(window).on("scroll", function() {
+        animateSkillsOnScroll();
+    });
+    animateSkillsOnScroll();
+});
+
+	function loadBaseProgressBars() {
+	var baseProgressBars = $(".progress__container");
+
+	for (var i = 0; i < baseProgressBars.length; i++) {
+		$(".skills").append(baseProgressBars.eq(i).closest(".skill"));
+		var progress = baseProgressBars.eq(i).data("progress");
+		baseProgressBars.eq(i).find(".progress__bar").width(progress + "%");
+		baseProgressBars.eq(i).find(".progress__text").css("opacity", "1");
+	}
+	}
+
+	loadBaseProgressBars();
+
+	function loadAdditionalProgressBars() {
+	$.ajax({
+		url: "data.html",
+		method: "GET",
+		success: function(data) {
+		var progressBars = $(data).find(".progress__container");
+
+		for (var i = 0; i < progressBars.length; i++) {
+			$(".skills").append(progressBars.eq(i).closest(".skill"));
+			var progress = progressBars.eq(i).data("progress");
+			progressBars.eq(i).find(".progress__bar").width(progress + "%");
+			progressBars.eq(i).find(".progress__text").css("opacity", "1");
+		}
+
+		additionalBarsLoaded = true;
+
+		if (fullVisibilityClicked) {
+			$("#showFull").text("Скрыть");
+		} else {
+			$("#showFull").text("Показать полностью");
+		}
+		},
+		error: function(xhr, status, error) {
+		console.error("Error loading additional progress bars:", error);
+		}
+	});
+	}
+
+	$("#showFull").click(function() {
+    fullVisibilityClicked = !fullVisibilityClicked;
+    if (!additionalBarsLoaded) {
+        loadAdditionalProgressBars();
+    } else {
+        var $hiddenSkills = $(".skills .skill:gt(" + (maxVisibleBars - 1) + ")");
+        if (fullVisibilityClicked) {
+            $hiddenSkills.fadeIn(); // Плавно показываем скрытые элементы
+            $("#showFull").text("Скрыть");
+        } else {
+            $hiddenSkills.fadeOut(); // Плавно скрываем элементы
+            $("#showFull").text("Показать полностью");
+        }
+    }
+});
+	var currentURL = window.location.href;
+
+$('.header__navigation_list a').each(function() {
+	if (currentURL.includes($(this).attr('href'))) {
+		$(this).addClass('bold-link');
+	}
+});
+			});
+		</script>		
+		<script src="js/app.min.js"></script>
+	</body>
+</html>

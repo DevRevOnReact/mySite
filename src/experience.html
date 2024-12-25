@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html',{"title": "Главная"})
+<link rel="stylesheet" href="./files/components/bem-blocks/style.css">
+<body>
+  <div class="wrapper">
+    @@include('html/header.html',{})
+
+    <section class="experience__main">
+      <img src="../img/banner123.jpg" alt="Декоративный куб" class="cube">
+      <div class="experience__block">
+        <h1 class="experience__head">Опыт работы</h1>
+        <div class="experience" style="height: auto; min-height: fit-content;">
+          <div class="experience__container">
+            <div class="experience__progress_container">
+              <span class="experience__progress_text">Июль 2022 г — Август 2023 г</span>
+            </div>
+            <p class="experience__text">
+              
+              <h1>1integrator</h1>
+              <p><strong>Ростов-на-Дону,</strong> <a href="http://www.1-integrator.ru" target="_blank" rel="noopener noreferrer">www.1-integrator.ru</a></p>
+              <p><em>Системная интеграция, автоматизация бизнес-процессов, ИТ-консалтинг.</em></p>
+              <h2>Frontend-разработчик</h2>
+              <p>Интеграция веб-приложений на базе React и CMS Bitrix в тесной коллаборации с backend-разработчиками и клиентами.</p>
+              <h3>Основные достижения:</h3>
+              <ul>
+                  <li>Разработал рекламные лендинги с использованием <strong>React, Redux и Next.js</strong>, обеспечив высокую скорость загрузки и отзывчивость интерфейса.</li>
+                  <li>Оптимизировал страницы с внедрением ленивой загрузки, что улучшило пользовательский опыт.</li>
+                  <li>Настроил сборку и автоматизацию разработки через <strong>Webpack</strong> и <strong>Gulp</strong>, ускорив процессы разработки.</li>
+                  <li>Интегрировал <strong>Яндекс Метрику</strong> и <strong>Google Analytics</strong> для анализа пользовательского поведения и оптимизации контента.</li>
+              </ul>
+              <h3>Технологии:</h3>
+              <p><strong>Стек технологий:</strong> React, JavaScript, CSS/SCSS, HTML, Webpack, Git, Redux, Next.js</p>
+            </p>
+            @@include('../src/files/components/bem-blocks/slider_1.html',{})
+          </div>   
+        </div>
+        <div class="experience" style="height: auto; min-height: fit-content;">
+          <div class="experience__container">
+            <div class="experience__progress_container">
+              <span class="experience__progress_text">Сентябрь 2023 г — Февраль 2024 г</span>
+            </div>
+            <p class="experience__text">
+              <h1>Студия Олега Чулакова</h1>
+              <p><strong>Веб-сайт:</strong> <a href="https://www.chulakov.ru" target="_blank">www.chulakov.ru</a></p>
+              <p><strong>Сфера деятельности:</strong> информационные технологии, системная интеграция, разработка ПО</p>
+              <h2>Frontend-разработчик</h2>
+              <p>Разработка крупных веб-проектов для улучшения взаимодействия с пользователями и повышения производительности сайтов. Команда: 10 специалистов (3 фронтенд-разработчика, 3 бэкенд-разработчика, PM, тестировщик, 2 дизайнера, DevOps-инженер).</p>
+              <h3>Основные достижения:</h3>
+              <ul>
+                  <li>Настроил тестовый сервер и автодеплой.</li>
+                  <li>Интегрировал Mantine UI.</li>
+                  <li>Реализовал поддержку переводов с помощью react-i18next.</li>
+                  <li>Создал визуализацию данных с Framer Motion и D3.js, увеличив взаимодействие с контентом на 20%.</li>
+                  <li>Разработал Digital production сайт на Next.js и CMS Strapi с использованием Framer Motion.</li>
+                  <li>Участвовал в проекте ГЛОНАСС для Санкт-Петербурга: создал UI-компоненты и бизнес-логику на Mobx.</li>
+              </ul>
+              <h3>Технологии:</h3>
+              <p>React, Chramework, CSS, HTML, SCSS, Axios, Webpack, Git, Mobx, React-hook-form, Redux-thunk, Reselect, Typescript, Docker, Next.js</p>
+            </p>
+            @@include('../src/files/components/bem-blocks/slider_2.html',{})
+          </div>
+        </div>
+        <div class="experience" style="height: auto; min-height: fit-content;">
+          <div class="experience__container">
+            <div class="experience__progress_container">
+              <span class="experience__progress_text">Февраль 2023 г — Сентябрь 2024 г</span>
+            </div>
+            <p class="experience__text">
+              <h1>ООО Цифровые Контрольные Технологии</h1>
+              <p><strong>Город:</strong> Ростов-на-Дону</p>
+              <p><strong>Сфера деятельности:</strong> информационные технологии, системная интеграция, интернет</p>
+              <p><strong>Веб-сайт:</strong> <a href="https://mt-r.ru/" target="_blank">mt-r.ru</a></p>
+              <h2>Frontend-разработчик</h2>
+              <p>Разработка и улучшение веб-платформы <strong>YMS Yard 2.0</strong> для управления логистикой.</p>
+              <h3>Основные достижения:</h3>
+              <ul>
+                  <li>Сократил процесс авторизации с 4 до 2 шагов, улучшив UX.</li>
+                  <li>Реализовал модуль отчетов с CRUD-операциями для автоматизации обработки данных.</li>
+                  <li>Автоматизировал CI/CD через Jenkins и Docker, ускорив обновления системы.</li>
+                  <li>Интегрировал SMTP и уведомления через SMS, email и WhatsApp.</li>
+                  <li>Настроил среду компонентов с использованием Storybook для упрощения тестирования.</li>
+              </ul>
+              <h3>Технологии:</h3>
+              <p>React, Kotlin/JS, Redux, Docker, Jenkins, MaterialUI, Formik, OAuth 2.0, JWT</p>
+            </p>
+            @@include('../src/files/components/bem-blocks/slider_3.html',{})
+          </div>
+        </div>
+      </div>
+    </section>
+
+    @@include('html/footer.html',{})
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    const isScrolledIntoView = (elem) => {
+      const docViewTop = $(window).scrollTop();
+      const docViewBottom = docViewTop + $(window).height();
+      const elemTop = $(elem).offset().top;
+      return elemTop <= docViewBottom && elemTop >= docViewTop - $(elem).height();
+    };  
+
+    const animateSkillsOnScroll = () => {
+      $(".experience").each(function () {
+        if (isScrolledIntoView(this) && !$(this).hasClass("visible")) {
+          $(this).addClass("visible");
+        }
+      });
+    };
+
+    $(document).ready(() => {
+      const currentURL = window.location.href;
+      $('.header__navigation_list a').each(function () {
+        if (currentURL.includes($(this).attr('href'))) {
+          $(this).addClass('bold-link');
+        }
+      });
+
+      animateSkillsOnScroll();
+      $(window).on('scroll', animateSkillsOnScroll);
+    });
+
+  </script>
+  <script src="js/app.min.js"></script>
+  <script type="text/javascript" src="./files/components/bem-blocks/slider.js"></script>
+
+</body>
+
+</html>
