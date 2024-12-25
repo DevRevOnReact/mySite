@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="ru">
 @@include('html/head.html',{"title": "Главная"})
-<link rel="stylesheet" href="./files/components/bem-blocks/style.css">
+<link rel="stylesheet" href="files/components/bem-blocks/style.css">
 <body>
   <div class="wrapper">
     @@include('html/header.html',{})
 
     <section class="experience__main">
-      <img src="../img/banner123.jpg" alt="Декоративный куб" class="cube">
+      <img src="img/banner123.jpg" alt="Декоративный куб" class="cube">
       <div class="experience__block">
         <h1 class="experience__head">Опыт работы</h1>
         <div class="experience" style="height: auto; min-height: fit-content;">
@@ -32,7 +32,7 @@
               <h3>Технологии:</h3>
               <p><strong>Стек технологий:</strong> React, JavaScript, CSS/SCSS, HTML, Webpack, Git, Redux, Next.js</p>
             </p>
-            @@include('../src/files/components/bem-blocks/slider_1.html',{})
+            @@include('files/components/bem-blocks/slider_1.html',{})
           </div>   
         </div>
         <div class="experience" style="height: auto; min-height: fit-content;">
@@ -58,7 +58,7 @@
               <h3>Технологии:</h3>
               <p>React, Chramework, CSS, HTML, SCSS, Axios, Webpack, Git, Mobx, React-hook-form, Redux-thunk, Reselect, Typescript, Docker, Next.js</p>
             </p>
-            @@include('../src/files/components/bem-blocks/slider_2.html',{})
+            @@include('files/components/bem-blocks/slider_2.html',{})
           </div>
         </div>
         <div class="experience" style="height: auto; min-height: fit-content;">
@@ -84,7 +84,7 @@
               <h3>Технологии:</h3>
               <p>React, Kotlin/JS, Redux, Docker, Jenkins, MaterialUI, Formik, OAuth 2.0, JWT</p>
             </p>
-            @@include('../src/files/components/bem-blocks/slider_3.html',{})
+            @@include('files/components/bem-blocks/slider_3.html',{})
           </div>
         </div>
       </div>
@@ -124,7 +124,7 @@
 
   </script>
   <script src="js/app.min.js"></script>
-  <script type="text/javascript" src="./files/components/bem-blocks/slider.js"></script>
+  <script type="text/javascript" src="files/components/bem-blocks/slider.js"></script>
 
 </body>
 
