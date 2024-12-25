@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.min.css"/>
+  <title>Главная</title>
+</head>
+<link rel="stylesheet" href="./files/components/bem-blocks/style.css">
+<body>
+  <div class="wrapper">
+    <div id="content"></div>
+<section class="header">
+    <div class="header__background">
+        <div class="container header__container">
+            <div class="header__profile">
+                <img src="../img/myface.jpg" alt="Мой портрет" class="header__profile_image">
+                <div class="header__profile_text">
+                    <p class="header__profile_name">Данил Ревякин</p>
+                    <span class="header__profile_post">Веб-разработчик</span>
+                </div>
+            </div>
+            <a href="#footer" class="header__button">Мои контакты</a>
+        </div>
+    </div>
+    <nav class="header__navigation">
+        <ul class="header__navigation_list">
+            <li class="header__navigation_item">
+                <a id="aboutMeLink" class="ajax-link" href="index.html">Обо мне</a>
+            </li>
+            <li class="header__navigation_item">
+                <a id="experienceLink" class="ajax-link" href="experience.html">Опыт работы</a>
+            </li>
+            <li class="header__navigation_item">
+                <a id="skillsLink" class="ajax-link" href="skills.html">Навыки</a>
+            </li>
+        </ul>
+    </nav>
+</section>
+
+
+    <section class="experience__main">
+      <img src="../img/banner123.jpg" alt="Декоративный куб" class="cube">
+      <div class="experience__block">
+        <h1 class="experience__head">Опыт работы</h1>
+        <div class="experience" style="height: auto; min-height: fit-content;">
+          <div class="experience__container">
+            <div class="experience__progress_container">
+              <span class="experience__progress_text">Июль 2022 г — Август 2023 г</span>
+            </div>
+            <p class="experience__text">
+              
+              <h1>1integrator</h1>
+              <p><strong>Ростов-на-Дону,</strong> <a href="http://www.1-integrator.ru" target="_blank" rel="noopener noreferrer">www.1-integrator.ru</a></p>
+              <p><em>Системная интеграция, автоматизация бизнес-процессов, ИТ-консалтинг.</em></p>
+              <h2>Frontend-разработчик</h2>
+              <p>Интеграция веб-приложений на базе React и CMS Bitrix в тесной коллаборации с backend-разработчиками и клиентами.</p>
+              <h3>Основные достижения:</h3>
+              <ul>
+                  <li>Разработал рекламные лендинги с использованием <strong>React, Redux и Next.js</strong>, обеспечив высокую скорость загрузки и отзывчивость интерфейса.</li>
+                  <li>Оптимизировал страницы с внедрением ленивой загрузки, что улучшило пользовательский опыт.</li>
+                  <li>Настроил сборку и автоматизацию разработки через <strong>Webpack</strong> и <strong>Gulp</strong>, ускорив процессы разработки.</li>
+                  <li>Интегрировал <strong>Яндекс Метрику</strong> и <strong>Google Analytics</strong> для анализа пользовательского поведения и оптимизации контента.</li>
+              </ul>
+              <h3>Технологии:</h3>
+              <p><strong>Стек технологий:</strong> React, JavaScript, CSS/SCSS, HTML, Webpack, Git, Redux, Next.js</p>
+            </p>
+            <div class="slider">
+    <div class="slider__container">
+        <div class="slider__wrapper">
+            <div class="slider__items">
+                <div class="slider__item">
+                    <div class="slider__zoom-container">
+                        <img src="../img/sliders/slider_1/slider11.jpg" alt="" class="slider__img">
+                    </div>
+                </div>
+                <div class="slider__item">
+                    <div class="slider__zoom-container">
+                        <img src="../img/sliders/slider_1/slider12.jpg" alt="" class="slider__img">
+                    </div>
+                </div>
+                <div class="slider__item">
+                    <div class="slider__zoom-container">
+                        <img src="../img/sliders/slider_1/slider13.jpg" alt="" class="slider__img">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slider__controls">
+            <button class="slider__control slider__control_prev" data-slide="prev"></button>
+            <button class="slider__control slider__control_next" data-slide="next"></button>
+        </div>
+        <ol class="slider__indicators">
+            <li data-slide-to="0"></li>
+            <li data-slide-to="1"></li>
+            <li data-slide-to="2"></li>
+        </ol>
+    </div>
+</div>
+
+          </div>   
+        </div>
+        <div class="experience" style="height: auto; min-height: fit-content;">
+          <div class="experience__container">
+            <div class="experience__progress_container">
+              <span class="experience__progress_text">Сентябрь 2023 г — Февраль 2024 г</span>
+            </div>
+            <p class="experience__text">
+              <h1>Студия Олега Чулакова</h1>
+              <p><strong>Веб-сайт:</strong> <a href="https://www.chulakov.ru" target="_blank">www.chulakov.ru</a></p>
+              <p><strong>Сфера деятельности:</strong> информационные технологии, системная интеграция, разработка ПО</p>
+              <h2>Frontend-разработчик</h2>
+              <p>Разработка крупных веб-проектов для улучшения взаимодействия с пользователями и повышения производительности сайтов. Команда: 10 специалистов (3 фронтенд-разработчика, 3 бэкенд-разработчика, PM, тестировщик, 2 дизайнера, DevOps-инженер).</p>
+              <h3>Основные достижения:</h3>
+              <ul>
+                  <li>Настроил тестовый сервер и автодеплой.</li>
+                  <li>Интегрировал Mantine UI.</li>
+                  <li>Реализовал поддержку переводов с помощью react-i18next.</li>
+                  <li>Создал визуализацию данных с Framer Motion и D3.js, увеличив взаимодействие с контентом на 20%.</li>
+                  <li>Разработал Digital production сайт на Next.js и CMS Strapi с использованием Framer Motion.</li>
+                  <li>Участвовал в проекте ГЛОНАСС для Санкт-Петербурга: создал UI-компоненты и бизнес-логику на Mobx.</li>
+              </ul>
+              <h3>Технологии:</h3>
+              <p>React, Chramework, CSS, HTML, SCSS, Axios, Webpack, Git, Mobx, React-hook-form, Redux-thunk, Reselect, Typescript, Docker, Next.js</p>
+            </p>
+            <div class="slider">
+    <div class="slider__container">
+        <div class="slider__wrapper">
+            <div class="slider__items">
+                <div class="slider__item">
+                    <div class="slider__zoom-container">
+                        <img src="../img/sliders/slider_2/slider21.jpg" alt="" class="slider__img">
+                    </div>
+                </div>
+                <div class="slider__item">
+                    <div class="slider__zoom-container">
+                        <img src="../img/sliders/slider_2/slider22.jpg" alt="" class="slider__img">
+                    </div>
+                </div>
+                <div class="slider__item">
+                    <div class="slider__zoom-container">
+                        <img src="../img/sliders/slider_2/slider23.jpg" alt="" class="slider__img">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slider__controls">
+            <button class="slider__control slider__control_prev" data-slide="prev"></button>
+            <button class="slider__control slider__control_next" data-slide="next"></button>
+        </div>
+        <ol class="slider__indicators">
+            <li data-slide-to="0"></li>
+            <li data-slide-to="1"></li>
+            <li data-slide-to="2"></li>
+        </ol>
+    </div>
+</div>
+
+          </div>
+        </div>
+        <div class="experience" style="height: auto; min-height: fit-content;">
+          <div class="experience__container">
+            <div class="experience__progress_container">
+              <span class="experience__progress_text">Февраль 2023 г — Сентябрь 2024 г</span>
+            </div>
+            <p class="experience__text">
+              <h1>ООО Цифровые Контрольные Технологии</h1>
+              <p><strong>Город:</strong> Ростов-на-Дону</p>
+              <p><strong>Сфера деятельности:</strong> информационные технологии, системная интеграция, интернет</p>
+              <p><strong>Веб-сайт:</strong> <a href="https://mt-r.ru/" target="_blank">mt-r.ru</a></p>
+              <h2>Frontend-разработчик</h2>
+              <p>Разработка и улучшение веб-платформы <strong>YMS Yard 2.0</strong> для управления логистикой.</p>
+              <h3>Основные достижения:</h3>
+              <ul>
+                  <li>Сократил процесс авторизации с 4 до 2 шагов, улучшив UX.</li>
+                  <li>Реализовал модуль отчетов с CRUD-операциями для автоматизации обработки данных.</li>
+                  <li>Автоматизировал CI/CD через Jenkins и Docker, ускорив обновления системы.</li>
+                  <li>Интегрировал SMTP и уведомления через SMS, email и WhatsApp.</li>
+                  <li>Настроил среду компонентов с использованием Storybook для упрощения тестирования.</li>
+              </ul>
+              <h3>Технологии:</h3>
+              <p>React, Kotlin/JS, Redux, Docker, Jenkins, MaterialUI, Formik, OAuth 2.0, JWT</p>
+            </p>
+            <div class="slider">
+    <div class="slider__container">
+        <div class="slider__wrapper">
+            <div class="slider__items">
+                <div class="slider__item">
+                    <div class="slider__zoom-container">
+                        <img src="../img/sliders/slider_3/slider31.jpg" alt="" class="slider__img">
+                    </div>
+                </div>
+                <div class="slider__item">
+                    <div class="slider__zoom-container">
+                        <img src="../img/sliders/slider_3/slider32.jpg" alt="" class="slider__img">
+                    </div>
+                </div>
+                <div class="slider__item">
+                    <div class="slider__zoom-container">
+                        <img src="../img/sliders/slider_3/slider33.jpg" alt="" class="slider__img">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slider__controls">
+            <button class="slider__control slider__control_prev" data-slide="prev"></button>
+            <button class="slider__control slider__control_next" data-slide="next"></button>
+        </div>
+        <ol class="slider__indicators">
+            <li data-slide-to="0"></li>
+            <li data-slide-to="1"></li>
+            <li data-slide-to="2"></li>
+        </ol>
+    </div>
+</div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer" class="footer">
+    <div class="footer__background">
+        <div class="container footer__container">
+            <div class="footer__contacts">
+                <a href="mailto:danilrev04@gmail.com" class="footer__contacts_email">danilrev04@gmail.com</a>
+                <a href="tel:+79996971076" class="footer__contacts_number">+7-999-697-10-76</a>
+            </div>              
+        </div>
+        <div class="footer__socials">
+            <ul class="footer__socials_list">
+                <li class="footer__socials_item">
+                    <a href="#" class="social-icon">
+                        <svg class="icon" width="30.000000" height="16.666992" viewBox="0 0 30 16.667">
+                            <use xlink:href="./../img/svg/sprite.svg#social-vk" x="0" y="0"></use>
+                        </svg>
+                    </a>
+                </li>
+                <img src="../img/svg/line.svg" alt="" class="line">
+                <li class="footer__socials_item">
+                    <a href="" class="social-icon">
+                        <svg class="icon" width="24.000015" height="17.000000" viewBox="0 0 24 17">
+                            <use xlink:href="./../img/svg/sprite.svg#social-youtube" x="0" y="0"></use>
+                        </svg>
+                    </a>
+                </li>
+                <img src="../img/svg/line.svg" alt="" class="line">
+                <li class="footer__socials_item">
+                    <a href="" class="social-icon">
+                        <svg class="icon" width="40.000000" height="40.000000" viewBox="0 0 40 40">
+                            <use xlink:href="./../img/svg/sprite.svg#social-behance" x="0" y="0"></use>
+                        </svg>
+                    </a>
+                </li>
+                <img src="../img/svg/line.svg" alt="" class="line">
+                <li class="footer__socials_item">
+                    <a href="" class="social-icon">
+                        <svg class="icon" width="40.000000" height="40.000000" viewBox="0 0 40 40">
+                            <use xlink:href="./../img/svg/sprite.svg#social-gitlab" x="0" y="0"></use>
+                        </svg>
+                    </a>
+                </li>
+                <img src="../img/svg/line.svg" alt="" class="line">
+                <li class="footer__socials_item">
+                    <a href="" class="social-icon">
+                        <svg class="icon" width="40.000000" height="40.000000" viewBox="0 0 40 40">
+                            <use xlink:href="./../img/svg/sprite.svg#social-twitter" x="0" y="0"></use>
+                        </svg>
+                    </a>
+                </li>
+                <img src="../img/svg/line.svg" alt="" class="line">
+                <li class="footer__socials_item">
+                    <a href="" class="social-icon">
+                        <svg class="icon" width="40.000000" height="40.000000" viewBox="0 0 40 40">
+                            <use xlink:href="./../img/svg/sprite.svg#social-linkedin" x="0" y="0"></use>
+                        </svg>
+                    </a>
+                </li>
+                <img src="../img/svg/line.svg" alt="" class="line">
+                <li class="footer__socials_item">
+                    <a href="" class="social-icon">
+                        <svg class="icon" width="40.000000" height="40.000000" viewBox="0 0 40 40">
+                            <use xlink:href="./../img/svg/sprite.svg#social-meta" x="0" y="0"></use>
+                        </svg>
+                    </a>
+                </li>
+                <img src="../img/svg/line.svg" alt="" class="line">
+                <li class="footer__socials_item">
+                    <a href="" class="social-icon">
+                        <svg class="icon" width="40.000000" height="40.000000" viewBox="0 0 40 40">
+                            <use xlink:href="./../img/svg/sprite.svg#social-insta" x="0" y="0"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="develop">
+            <span class="develop__text">© Данил Ревякин, 2022–2024. Веб-разработчик</span>
+        </div>
+    </div>
+      
+</footer>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    const isScrolledIntoView = (elem) => {
+      const docViewTop = $(window).scrollTop();
+      const docViewBottom = docViewTop + $(window).height();
+      const elemTop = $(elem).offset().top;
+      return elemTop <= docViewBottom && elemTop >= docViewTop - $(elem).height();
+    };  
+
+    const animateSkillsOnScroll = () => {
+      $(".experience").each(function () {
+        if (isScrolledIntoView(this) && !$(this).hasClass("visible")) {
+          $(this).addClass("visible");
+        }
+      });
+    };
+
+    $(document).ready(() => {
+      const currentURL = window.location.href;
+      $('.header__navigation_list a').each(function () {
+        if (currentURL.includes($(this).attr('href'))) {
+          $(this).addClass('bold-link');
+        }
+      });
+
+      animateSkillsOnScroll();
+      $(window).on('scroll', animateSkillsOnScroll);
+    });
+
+  </script>
+  <script src="js/app.min.js"></script>
+  <script type="text/javascript" src="./files/components/bem-blocks/slider.js"></script>
+
+</body>
+
+</html>
